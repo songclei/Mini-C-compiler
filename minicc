@@ -1,0 +1,11 @@
+path=`pwd`
+cd $path/Eeyore
+make
+./a.out $1 > out
+cd ../Tigger
+make
+./a.out ../Eeyore/out > a.t
+cd ../RISCV
+make
+cd ..
+./RISCV/a.out Tigger/a.t $1 > a.s

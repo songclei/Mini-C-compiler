@@ -1,0 +1,3 @@
+./minicc /home/scl/Downloads/1500017738/test.c
+/opt/riscv/bin/riscv64-unknown-elf-gcc a.s -static -lminic -L.
+/home/scl/riscv-tools/riscv-gnu-toolchain/gem5/build/RISCV/gem5.opt --debug-flags=O3PipeView --debug-file=trace.out /home/scl/riscv-tools/riscv-gnu-toolchain/gem5/configs/example/se.py --cpu-type=DerivO3CPU --caches -c a.out

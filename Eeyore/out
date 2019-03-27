@@ -1,0 +1,23 @@
+var T0
+var T1
+f_main [0]
+  T0 = call f_getint
+  T1 = call f_getint
+  var T2
+  var T3
+  T3 = 1
+  var T4
+  T4 = 0
+  var t0
+  t0 = T0 || T1
+  if t0 == 0 goto l0
+  param T3
+  T2 = call f_putint
+  return 1
+  goto l1
+l0:
+  param T4
+  T2 = call f_putint
+  return 0
+l1:
+end f_main
